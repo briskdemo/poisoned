@@ -1,0 +1,17 @@
+bot/
+│
+├── main.py                   # Entry point, starts the bot
+├── config.py                 # Constants like TOKEN, ADMIN_ID, etc.
+├── handlers/
+│   ├── start.py              # /start and gender selection
+│   ├── media_flow.py         # get_media and sending media with buttons
+│   ├── bookmarks.py          # /bookmarks feature
+│   ├── admin.py              # Admin panel, reports, broadcast
+│   └── buttons.py            # Like/dislike/bookmark/download
+│
+├── utils/
+│   ├── checks.py             # is_admin, is_user_member
+│   └── keyboard.py           # Inline button generators
+│
+├── state.py                  # Global bot data structures
+└── media_cache.py            # Cache & access media logic
