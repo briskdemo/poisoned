@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: telegram-media-bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 7703903703:AAEvbYq_UFLxWGis2lfpT823_UNe3qZiYR0
+      - key: GROUP_USERNAME
+        value: allmalltoi
+      - key: JOIN_REQUIRED_GROUP
+        value: ppbackup01
+      - key: BACKUP_GROUP_LINK
+        value: https://t.me/ppbackup01
+      - key: MEDIA_GROUP_ID
+        value: -1002635316441
+      - key: ADMIN_ID
+        value: 7141876350
+      - key: ADMIN_USERNAME
+        value: "@Userinvalidcredits"
